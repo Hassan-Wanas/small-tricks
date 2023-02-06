@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", sans-serif;
+  margin: 0;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section:first-child {
+  background-color: #aaa;
+}
+
+section:nth-child(2) {
+  background-color: #bbb;
+}
+
+section:nth-child(3) {
+  background-color: #ccc;
+}
+
+section:last-of-type {
+  background-color: #eee;
+}
+
+.progress {
+  position: relative;
+  width: 500px;
+  height: 30px;
+  background-color: white;
+  margin: 10px;
+}
+
+.progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: indianred;
+  transition: width 0.3s linear;
+}
+
+.nums {
+  width: 400px;
+  display: flex;
+}
+
+.nums .num {
+  flex: 1;
+  text-align: center;
+  font: 40px;
+  padding: 20px;
+}
+
+.random {
+  width: 90%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.random span {
+  background-color: bisque;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 5px;
+  color: black;
+}
+
+.up {
+  position: fixed;
+  bottom: 10px;
+  right: -30px;
+  background-color: #ff5722;
+  color: wheat;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 4px;
+  font-family: Arial, Tahoma;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.up.show {
+  right: 10px;
+}
