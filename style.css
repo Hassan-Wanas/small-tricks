@@ -8,7 +8,7 @@ body {
 }
 
 section {
-  min-height: 100vh;
+  min-height: 150vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +16,8 @@ section {
 
 section:first-child {
   background-color: #aaa;
+  display: flex;
+  flex-direction: column;
 }
 
 section:nth-child(2) {
@@ -26,8 +28,45 @@ section:nth-child(3) {
   background-color: #ccc;
 }
 
-section:last-of-type {
+section:nth-child(4) {
   background-color: #eee;
+}
+
+section:nth-child(5) {
+  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+.serial {
+  background-color: #eee;
+  width: 200px;
+  height: 66.5px;
+  padding: 20px;
+  margin: 40px auto 0;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.generate {
+  display: block;
+  background-color: #ff5722;
+  width: fit-content;
+  padding: 10px 20px;
+  margin: 20px auto;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  user-select: none;
+}
+
+.generate:hover {
+  background-color: white;
+  color: #ff5722;
 }
 
 .progress {
@@ -92,4 +131,41 @@ section:last-of-type {
 
 .up.show {
   right: 10px;
+}
+
+.switcher {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.switcher li {
+  padding: 10px 15px;
+  background-color: #eee;
+  min-width: 105px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.switcher li.active,
+.switcher li:hover {
+  background-color: red;
+  color: white;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  margin: auto;
+}
+
+.gallery img {
+  margin-bottom: 10px;
+  transition: 0.3s;
+  margin-left: 5px;
+  margin-right: 5px;
 }

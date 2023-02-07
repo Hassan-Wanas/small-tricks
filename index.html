@@ -1,43 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
-<body>
-  <section class="one">Section One</section>
-  <section class="two">
-    <div class="skils">
-      <h3>HTML</h3>
-      <div class="progress">
-        <span style="width: 0;" data-width="80%"></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="one">
+      <div class="serial"></div>
+      <span class="generate">Generate</span>
+    </section>
+    <section class="two">
+      <div class="skils">
+        <h3>HTML</h3>
+        <div class="progress">
+          <span style="width: 0" data-width="80%"></span>
+        </div>
+        <h3>CSS</h3>
+        <div class="progress">
+          <span style="width: 0" data-width="90%"></span>
+        </div>
+        <h3>Scala</h3>
+        <div class="progress">
+          <span style="width: 0" data-width="50%"></span>
+        </div>
       </div>
-      <h3>CSS</h3>
-      <div class="progress">
-        <span style="width: 0;" data-width="90%"></span>
+    </section>
+    <section class="three">
+      <div class="nums">
+        <div class="num" data-goal="100">0</div>
+        <div class="num" data-goal="500">0</div>
+        <div class="num" data-goal="300">0</div>
       </div>
-      <h3>Scala</h3>
-      <div class="progress">
-        <span style="width: 0;" data-width="50%"></span>
+    </section>
+    <section class="four">
+      <div class="random">
+        <span></span>
       </div>
-    </div>
-  </section>
-  <section class="three">
-    <div class="nums">
-      <div class="num" data-goal="100">0</div>
-      <div class="num" data-goal="500">0</div>
-      <div class="num" data-goal="300">0</div>
-    </div>
-  </section>
-  <section class="four">
-    <div class="random">
-      <span></span>
-    </div>
-  </section>
-  <span class="up">Up</span>
-  <script src="main.js"></script>
-</body>
+    </section>
+    <section class="five">
+      <ul class="switcher">
+        <li class="active" data-cat=".all">All Work</li>
+        <li data-cat=".web">Web</li>
+        <li data-cat=".gfx">Graphic</li>
+        <li data-cat=".marketing">Marketing</li>
+      </ul>
+      <div class="gallery">
+        <img
+          decoding="async"
+          class="all web"
+          src="https://via.placeholder.com/150/F00/FFF?text=Web"
+          alt=""
+        />
+        <img
+          decoding="async"
+          class="all web"
+          src="https://via.placeholder.com/150/F00/FFF?text=Web"
+          alt=""
+        />
+        <img
+          decoding="async"
+          class="all gfx"
+          src="https://via.placeholder.com/150/00F/FFF?text=Graphic"
+          alt=""
+        />
+        <img
+          decoding="async"
+          class="all gfx"
+          src="https://via.placeholder.com/150/00F/FFF?text=Graphic"
+          alt=""
+        />
+        <img
+          decoding="async"
+          class="all marketing"
+          src="https://via.placeholder.com/150/000/FFF?text=Marketing"
+          alt=""
+        />
+        <img
+          decoding="async"
+          class="all web"
+          src="https://via.placeholder.com/150/F00/FFF?text=Web"
+          alt=""
+        />
+        <img
+          decoding="async"
+          class="all web"
+          src="https://via.placeholder.com/150/F00/FFF?text=Web"
+          alt=""
+        />
+        <img
+          decoding="async"
+          class="all marketing"
+          src="https://via.placeholder.com/150/000/FFF?text=Marketing"
+          alt=""
+        />
+        <img
+          decoding="async"
+          class="all marketing"
+          src="https://via.placeholder.com/150/000/FFF?text=Marketing"
+          alt=""
+        />
+        <img
+          decoding="async"
+          class="all gfx"
+          src="https://via.placeholder.com/150/00F/FFF?text=Graphic"
+          alt=""
+        />
+      </div>
+    </section>
+    <span class="up">Up</span>
+    <script src="main.js"></script>
+  </body>
 </html>
