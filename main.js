@@ -1,3 +1,8 @@
+let toggler = document.querySelector(".toggle");
+let nav = document.querySelector("nav");
+let closer = document.querySelector(".close");
+let navElements = document.querySelectorAll("nav a")
+
 let section1 = document.querySelector(".one")
 let generateBtn = document.querySelector(".generate");
 let serial = document.querySelector(".serial");
@@ -18,6 +23,20 @@ let switchersList = document.querySelectorAll(".switcher li");
 let imgs = document.querySelectorAll(".gallery img");
 
 let up = document.querySelector(".up");
+
+toggler.onclick = function () {
+  nav.classList.add("open")
+}
+
+closer.onclick = function () {
+  this.parentElement.classList.remove("open")
+}
+
+navElements.forEach((ele) => {
+  ele.onclick = function () {
+    this.parentElement.classList.remove("open")
+  }
+})
 
 generateBtn.addEventListener("click", function () {
   let characters = "012356789ABCDEF";
